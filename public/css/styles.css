@@ -1,0 +1,59 @@
+/* Center align all text inside ADD div */
+.ADD {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Initially hide add and minus money forms */
+#addMoney, #minusMoney {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Button Styling */
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Input Styling */
+input {
+    margin: 5px;
+    padding: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Center-align balance info */
+.balance-info {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center align table and text inside */
+.display {
+    text-align: center;
+}
+
+/* Table Styling */
+.table {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Table header and body text alignment */
+.table th, .table td {
+    text-align: center;
+}

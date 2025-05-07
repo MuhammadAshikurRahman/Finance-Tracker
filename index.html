@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracker</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Bootstrap CSS (for better styling) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Main Title (Centered) -->
+    <h1 class="text-center">Money Tracker</h1>
+
+    <!-- Buttons for Adding/Removing Money -->
+    <div class="ADD text-center">
+        <button id="addMoneyBtn">Add Money</button>
+        <button id="minusMoneyBtn">Minus Money</button>
+    </div>
+
+    <!-- Add Money Form (Initially Hidden) -->
+    <div id="addMoney">
+        <input type="text" id="text" placeholder="Enter transaction name" required />
+        <input type="number" id="amount" placeholder="Enter amount" required />
+        <button id="submitAddMoney" type="submit">Add Money</button>
+    </div>
+
+    <!-- Minus Money Form (Initially Hidden) -->
+    <div id="minusMoney">
+        <input type="text" id="text" placeholder="Enter transaction name" required />
+        <input type="number" id="amount" placeholder="Enter amount" required />
+        <button id="submitMinusMoney" type="submit">Minus Money</button>
+    </div>
+
+    <!-- Balance Information -->
+    <div class="balance-info mt-4">
+        <h3>Current Amount: <span id="currentAmount">0</span> ৳</h3>
+        <h4>Total Income: <span id="totalIncome">0</span> ৳</h4>
+        <h4>Total Expenditure: <span id="totalExpense">0</span> ৳</h4>
+    </div>
+
+    <!-- Transaction History Section -->
+    <div class="display text-center">
+        
+        <!-- Add Money Transaction History -->
+        <h3 class="mt-4">ADD Transaction History</h3>
+        <table class="table table-bordered mt-2 text-center">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="addtransactionHistory">
+                <!-- Transactions will be added here dynamically -->
+            </tbody>
+        </table>
+
+        <!-- Minus Money Transaction History -->
+        <h3 class="mt-4">Minus Transaction History</h3>
+        <table class="table table-bordered mt-2 text-center">
+            <thead>
+                <tr>  
+                    <th>Type</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="minustransactionHistory">
+                <!-- Transactions will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Clear Button -->
+<div class="text-center mt-3">
+    <button id="clearDataBtn" class="btn btn-danger">Clear Data</button>
+</div>
+
+
+    <!-- JavaScript Files -->
+    <script src="/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>
+ 
